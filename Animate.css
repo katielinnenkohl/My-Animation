@@ -1,0 +1,79 @@
+body {
+    background-image: url(DISNEY.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@keyframes spicy_dwight {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+
+
+}
+
+#animation1 {
+    animation-name: spicy_dwight;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    position: fixed;
+    bottom: 0px;
+    right: 1000px;
+
+
+
+}
+
+
+@keyframes rotateRight {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+#animation2 {
+    animation-name: rotateRight;
+    position: absolute;
+    right: 600px;
+    bottom: 900px;
+
+    transform-origin: 30% 210%;
+    animation: 2s rotateRight infinite linear;
+
+
+}
+
+
+#animation3{
+    animation-name: logo;
+    animation-duration: 2s;
+    position: absolute;
+    right: 700px;
+    bottom: 0px;
+    filter: invert();
+    animation-iteration-count: infinite;
+}
+@keyframes logo{
+    0%{
+        bottom: 0px;
+        right: 700px;
+    }
+    50%{
+        bottom: 50px;
+        right: 700px;
+
+    }
+    100%{
+        bottom: 0px;
+        right: 700px;
+    }
+}
+
+
