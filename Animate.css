@@ -1,3 +1,5 @@
+
+
 body {
     background-image: url(DISNEY.jpg);
     background-repeat: no-repeat;
@@ -29,29 +31,47 @@ body {
 
 }
 
+@keyframes michael {
+    0% {
+        right: 300px;
+        bottom: 0px;
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+    }
+    100% {
+        right: 500px;
+        bottom: 0px;
+    }
+}
+
 
 @keyframes rotateRight {
     100% {
-        transform: rotate(360deg);
+        transform: rotate(180deg);
     }
 
 }
 
 
 #animation2 {
-    animation-name: rotateRight;
-    position: absolute;
-    right: 600px;
-    bottom: 900px;
+    top: -500px;
+    left: 1000px;
+    right: 100px;
+    bottom: 0px;
+    height: 500px;
+    animation-name: rotateRight, michael;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 
-    transform-origin: 30% 210%;
-    animation: 2s rotateRight infinite linear;
 
 
 }
 
 
-#animation3{
+#animation3 {
     animation-name: logo;
     animation-duration: 2s;
     position: absolute;
@@ -60,20 +80,25 @@ body {
     filter: invert();
     animation-iteration-count: infinite;
 }
-@keyframes logo{
-    0%{
+
+@keyframes logo {
+    0% {
         bottom: 0px;
         right: 700px;
     }
-    50%{
+    50% {
         bottom: 50px;
         right: 700px;
 
     }
-    100%{
+    100% {
         bottom: 0px;
         right: 700px;
     }
 }
 
-
+#animation4{
+    top: 440px;
+    right: 350px;
+    position: absolute;
+}
