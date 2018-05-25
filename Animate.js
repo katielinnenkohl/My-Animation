@@ -4,11 +4,11 @@ var ypos = 350;
 var id= setInterval(frame, 5);
 
 function frame(){
-    if( ypos == 350){
+    if( ypos == 0){
         clearInterval(id);
     }
     else{
         ypos--;
-        box.style.top = ypos + 'px';
+        animation4.style.top = ypos + 'px';
     }
 }

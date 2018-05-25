@@ -1,4 +1,6 @@
-
+#container {
+    position: relative;
+}
 
 body {
     background-image: url(DISNEY.jpg);
@@ -77,7 +79,7 @@ body {
     position: absolute;
     right: 700px;
     bottom: 0px;
-    filter: invert();
+    filter: invert(100%);
     animation-iteration-count: infinite;
 }
 
