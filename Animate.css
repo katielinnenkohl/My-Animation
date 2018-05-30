@@ -1,4 +1,7 @@
-
+#container{
+    height:1000px;
+    width: 2000px;
+}
 
 body {
     background-image: url(DISNEY.jpg);
@@ -76,9 +79,9 @@ body {
     animation-duration: 2s;
     position: absolute;
     right: 700px;
-    bottom: 0px;
-    filter: invert(100%);
+    bottom: 0px; filter: invert(100%);
     animation-iteration-count: infinite;
+    transition: transform .5s, background .5s;
 }
 
 @keyframes logo {
@@ -96,6 +99,9 @@ body {
         right: 700px;
     }
 }
+#animation3:hover{
+    transform: scale(2);
+}
 
 #animation5{
     top:50px;
@@ -105,6 +111,8 @@ body {
     animation-duration: 5s;
 }
 
+
+
 #animation4{
     top: 440px;
     right: 350px;
@@ -112,5 +120,13 @@ body {
     animation-duration: 5s;
 }
 
+#animation6{
+    position: absolute;
+    right: 885px;
+    top: 65px;
+}
+#animation6:active{
+    transform: scale(50);
+}
 
 
