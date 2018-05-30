@@ -1,6 +1,4 @@
-#container {
-    position: relative;
-}
+
 
 body {
     background-image: url(DISNEY.jpg);
@@ -99,8 +97,20 @@ body {
     }
 }
 
+#animation5{
+    top:50px;
+    right: 900px;
+
+    position: absolute;
+    animation-duration: 5s;
+}
+
 #animation4{
     top: 440px;
     right: 350px;
     position: absolute;
+    animation-duration: 5s;
 }
+
+
+
