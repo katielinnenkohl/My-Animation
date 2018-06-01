@@ -7,6 +7,7 @@ body {
     background-image: url(DISNEY.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: disney;
 }
 
 
@@ -129,4 +130,9 @@ body {
     transform: scale(50);
 }
 
+#ring{
+    top: 0px;
+    position: absolute;
+    transition: transform .2s, background .5s, left .5s ease-in-out, top .5s ease-in-out;
+}
 

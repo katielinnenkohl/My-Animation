@@ -22,4 +22,15 @@ function frame(){
     }
 
 }
+var ring = document.getElementById("ring");
+var container = document.getElementById("container");
+
+container.addEventListener("click" , moveThing);
+
+function moveThing(event){
+    var xPosition = event.clientX -50;
+    var yPosition = event.clientY -50;
+    ring.style.left = xPosition + "px";
+    ring.style.top = yPosition + "px";
+}
 
